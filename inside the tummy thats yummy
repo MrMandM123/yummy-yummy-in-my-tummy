@@ -1,0 +1,457 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local Exit = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Toggle = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local SuperHuman = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local SuperHumanOff = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Infinite = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Adminus = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Fate = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local KeyLogin = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local Check = Instance.new("TextBox")
+local Sumbit = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local GetKey = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.Position = UDim2.new(-4.47034836e-08, 0, 0.315261096, 0)
+MainFrame.Size = UDim2.new(0, 144, 0, 340)
+MainFrame.Visible = false
+MainFrame.Selectable = true
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+UICorner.Parent = MainFrame
+
+Frame.Parent = MainFrame
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.0983193368, 0)
+Frame.Size = UDim2.new(0, 144, 0, 4)
+
+Exit.Name = "Exit"
+Exit.Parent = MainFrame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.BackgroundTransparency = 1.000
+Exit.Position = UDim2.new(0.784722209, 0, 0, 0)
+Exit.Size = UDim2.new(0, 30, 0, 32)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Click:Connect(function()
+	Exit.Parent.Visible = false
+end)
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.00658263266, 0)
+TextLabel.Size = UDim2.new(0, 108, 0, 31)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Scripts"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Toggle.Name = "Toggle"
+Toggle.Parent = MainFrame
+Toggle.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Toggle.Position = UDim2.new(0.104166664, 0, 0.232633054, 0)
+Toggle.Size = UDim2.new(0, 113, 0, 32)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Off"
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextScaled = true
+Toggle.TextSize = 14.000
+Toggle.TextWrapped = true
+
+UICorner_2.Parent = Toggle
+
+SuperHuman.Name = "SuperHuman"
+SuperHuman.Parent = MainFrame
+SuperHuman.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+SuperHuman.Position = UDim2.new(0.125, 0, 0.447899103, 0)
+SuperHuman.Size = UDim2.new(0, 55, 0, 32)
+SuperHuman.Font = Enum.Font.SourceSans
+SuperHuman.Text = "On"
+SuperHuman.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuperHuman.TextScaled = true
+SuperHuman.TextSize = 14.000
+SuperHuman.TextWrapped = true
+SuperHuman.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 125
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 125
+end)
+
+UICorner_3.Parent = SuperHuman
+
+SuperHumanOff.Name = "SuperHumanOff"
+SuperHumanOff.Parent = MainFrame
+SuperHumanOff.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+SuperHumanOff.Position = UDim2.new(0.506944418, 0, 0.447899193, 0)
+SuperHumanOff.Size = UDim2.new(0, 55, 0, 32)
+SuperHumanOff.Font = Enum.Font.SourceSans
+SuperHumanOff.Text = "Off"
+SuperHumanOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuperHumanOff.TextScaled = true
+SuperHumanOff.TextSize = 14.000
+SuperHumanOff.TextWrapped = true
+SuperHumanOff.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+UICorner_4.Parent = SuperHumanOff
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.138935581, 0)
+TextLabel_2.Size = UDim2.new(0, 143, 0, 31)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "Aimbot"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = MainFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.356582642, 0)
+TextLabel_3.Size = UDim2.new(0, 143, 0, 31)
+TextLabel_3.Font = Enum.Font.Ubuntu
+TextLabel_3.Text = "Super Human"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = MainFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0069444445, 0, 0.591876745, 0)
+TextLabel_4.Size = UDim2.new(0, 143, 0, 31)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "Admins"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Frame_2.Parent = MainFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.571848691, 0)
+Frame_2.Size = UDim2.new(0, 144, 0, 7)
+
+Frame_3.Parent = MainFrame
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.756944478, 0, -8.75, 0)
+Frame_3.Size = UDim2.new(0, 4, 0, 33)
+
+Frame_4.Parent = MainFrame
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 0.354201645, 0)
+Frame_4.Size = UDim2.new(0, 144, 0, 7)
+
+Infinite.Name = "Infinite"
+Infinite.Parent = MainFrame
+Infinite.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Infinite.Position = UDim2.new(-0.00333332829, 0, 0.681524813, 0)
+Infinite.Size = UDim2.new(0, 70, 0, 32)
+Infinite.Font = Enum.Font.SourceSans
+Infinite.Text = "Infinite Yield"
+Infinite.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infinite.TextScaled = true
+Infinite.TextSize = 14.000
+Infinite.TextWrapped = true
+Infinite.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UICorner_5.Parent = Infinite
+
+Adminus.Name = "Adminus"
+Adminus.Parent = MainFrame
+Adminus.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Adminus.Position = UDim2.new(0.503611147, 0, 0.681524813, 0)
+Adminus.Size = UDim2.new(0, 70, 0, 32)
+Adminus.Font = Enum.Font.SourceSans
+Adminus.Text = "Adminus"
+Adminus.TextColor3 = Color3.fromRGB(255, 255, 255)
+Adminus.TextScaled = true
+Adminus.TextSize = 14.000
+Adminus.TextWrapped = true
+Adminus.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/flerci42/AdminusKeySystem/main/Obfuscated"))()
+end)
+
+UICorner_6.Parent = Adminus
+
+Fate.Name = "Fate"
+Fate.Parent = MainFrame
+Fate.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Fate.Position = UDim2.new(-0.00333327055, 0, 0.855054259, 0)
+Fate.Size = UDim2.new(0, 70, 0, 32)
+Fate.Font = Enum.Font.SourceSans
+Fate.Text = "Fates admin"
+Fate.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fate.TextScaled = true
+Fate.TextSize = 14.000
+Fate.TextWrapped = true
+Fate.MouseButton1Click:Connect(function()
+	getgenv().MessageOnLoaded = false -- recommend to keep it false
+	loadstring(game:HttpGet("https://pastebin.com/raw/V7CH5jzn"))() 
+end)
+
+UICorner_7.Parent = Fate
+
+KeyLogin.Name = "KeyLogin"
+KeyLogin.Parent = ScreenGui
+KeyLogin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KeyLogin.Position = UDim2.new(0.359199017, 0, 0.269076288, 0)
+KeyLogin.Size = UDim2.new(0, 276, 0, 230)
+
+UICorner_8.Parent = KeyLogin
+
+TextLabel_5.Parent = KeyLogin
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0, 0, -0.000194848108, 0)
+TextLabel_5.Size = UDim2.new(0, 276, 0, 54)
+TextLabel_5.Font = Enum.Font.Ubuntu
+TextLabel_5.Text = "Welcome and thank you for chosing M&M ware"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = KeyLogin
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0, 0, 0.234587759, 0)
+TextLabel_6.Size = UDim2.new(0, 276, 0, 24)
+TextLabel_6.Font = Enum.Font.Ubuntu
+TextLabel_6.Text = "Please enter the key"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Check.Name = "Check"
+Check.Parent = KeyLogin
+Check.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+Check.BorderColor3 = Color3.fromRGB(152, 152, 152)
+Check.BorderSizePixel = 0
+Check.Position = UDim2.new(0, 0, 0.439130515, 0)
+Check.Size = UDim2.new(0, 276, 0, 50)
+Check.Font = Enum.Font.SourceSans
+Check.Text = ""
+Check.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check.TextSize = 14.000
+
+Sumbit.Name = "Sumbit"
+Sumbit.Parent = KeyLogin
+Sumbit.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Sumbit.Position = UDim2.new(0.137681156, 0, 0.686956584, 0)
+Sumbit.Size = UDim2.new(0, 200, 0, 30)
+Sumbit.Font = Enum.Font.SourceSans
+Sumbit.Text = "Log in"
+Sumbit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sumbit.TextScaled = true
+Sumbit.TextSize = 14.000
+Sumbit.TextWrapped = true
+Sumbit.MouseButton1Click:Connect(function()
+	if Check.Text == "M&M" then
+		KeyLogin.Visible = false
+		wait(0.5)
+		MainFrame.Visible = true
+	end
+end)
+
+UICorner_9.Parent = Sumbit
+
+GetKey.Name = "GetKey"
+GetKey.Parent = KeyLogin
+GetKey.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+GetKey.Position = UDim2.new(0.137681156, 0, 0.843478322, 0)
+GetKey.Size = UDim2.new(0, 200, 0, 30)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.Text = "GetKey"
+GetKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetKey.TextScaled = true
+GetKey.TextSize = 14.000
+GetKey.TextWrapped = true
+GetKey.MouseButton1Click:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {Title = "Copied", Text = "Link successfully copied", Icon = "", Duration = 3})
+	wait(0.5)
+	setclipboard("https://raw.githubusercontent.com/MrMandM123/key/main/key")
+end)
+
+UICorner_10.Parent = GetKey
+
+-- Scripts:
+
+local function LBGO_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+	
+end
+coroutine.wrap(LBGO_fake_script)()
+local function MIRGC_fake_script() -- Toggle.LocalScript 
+	local script = Instance.new('LocalScript', Toggle)
+
+	
+	
+	_G.aimbot = false
+	local camera = game.Workspace.CurrentCamera
+	local localplayer = game:GetService("Players").LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.aimbot == false then
+			_G.aimbot = true
+			script.Parent.TextColor3 = Color3.fromRGB(0,170,0)
+			script.Parent.Text = "On"
+			function closestplayer()
+				local dist = math.huge -- math.huge means a really large number, 1M+.
+				local target = nil --- nil means no value
+				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+					if v ~= localplayer then
+						if v.Character and v.Character:FindFirstChild("Head") and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+							local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+							if magnitude < dist then
+								dist = magnitude
+								target = v
+							end
+	
+						end
+					end
+				end
+				return target
+			end
+	
+		else
+			_G.aimbot = false
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+			script.Parent.Text = "Off"
+		end
+	end)
+	
+	local settings = {
+		keybind = Enum.UserInputType.MouseButton2
+	}
+	
+	local UIS = game:GetService("UserInputService")
+	local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
+	
+	UIS.InputBegan:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then
+			aiming = true
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
+			aiming = false
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if aiming then
+			camera.CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character.Head.Position) -- locks into the HEAD
+		end
+	end)
+	
+end
+coroutine.wrap(MIRGC_fake_script)()
+local function GRHS_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+	
+end
+coroutine.wrap(GRHS_fake_script)()
+local function LPBRH_fake_script() -- Frame_3.LocalScript 
+	local script = Instance.new('LocalScript', Frame_3)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+	
+end
+coroutine.wrap(LPBRH_fake_script)()
+local function NBCPH_fake_script() -- Frame_4.LocalScript 
+	local script = Instance.new('LocalScript', Frame_4)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+	
+end
+coroutine.wrap(NBCPH_fake_script)()
